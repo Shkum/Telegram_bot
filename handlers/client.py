@@ -20,7 +20,7 @@ async def schedule(message: types.message):
 
 # @dp.message_handler(commands=['Location'])
 async def location(message: types.message):
-    await bot.send_message(message.from_user.id, 'current location:')  # , reply_markup=ReplyKeyboardRemove()) # remove keyboard after use
+    await bot.send_message(message.from_user.id, 'current location:')  # reply_markup=ReplyKeyboardRemove()) # remove keyboard after use
 
 
 def register_handlers_client(dp: Dispatcher):
